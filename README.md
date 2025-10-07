@@ -80,10 +80,10 @@ Though I have been learning Data Science, then why am I doing this project? Main
 
 Explore notebooks and source code of this project.
 
-- Notebook 1: [Prescription_parser]
-- Notebook 2: [Patient_details_parser]
-- Backend: [Source code directory]
-- Frontend: [Streamlit app]
+- Notebook 1: [Prescription_parser](https://github.com/ashaafkhan/medical-data-extraction-app/blob/main/Notebooks/01_prescription_parser.ipynb)
+- Notebook 2: [Patient_details_parser](https://github.com/ashaafkhan/medical-data-extraction-app/blob/main/Notebooks/02_patient_details_parser.ipynb)
+- Backend: [Source code directory](https://github.com/ashaafkhan/medical-data-extraction-app/tree/main/backend)
+- Frontend: [Streamlit app](https://github.com/ashaafkhan/medical-data-extraction-app/tree/main/frontend)
 
 ## <a name="a5">5. What did I learn through this project?</a>
 
