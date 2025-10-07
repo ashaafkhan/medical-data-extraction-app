@@ -1,16 +1,18 @@
 import os
 import mysql.connector
 from mysql.connector import Error
+import streamlit as st
+
 
 class DBUtility:
     def __init__(self) -> None:
         # Load DB config from environment variables with sensible defaults
         self.config = {
-            'host': os.environ.get('MDE_DB_HOST', 'localhost'),
-            'database': os.environ.get('MDE_DB_NAME', 'medical_data_db'),
-            'user': os.environ.get('MDE_DB_USER', 'root'),
-            'password': os.environ.get('MDE_DB_PASSWORD', 'YOUR_PASSWORD_HERE')
-        }
+            'host': st.secrets.get('MDE_DB_HOST', 'localhost'),
+            'database': st.secrets.get('MDE_DB_NAME', 'medical_data_db'),
+            'user': st.secrets.get('MDE_DB_USER', 'root'),
+            'password': st.secrets['MDE_DB_PASSWORD']
+}
         self.connection = None
         self.cursor = None
 
